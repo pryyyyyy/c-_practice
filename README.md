@@ -89,3 +89,38 @@
 `int * const p`
 3. 指向const的const指针：都不可变
 `const int * const p`
+
+# 结构体
+    struct Student
+    {
+        string name;
+        int age;
+        string gender;
+    }
+
+    struct Student stu;
+
+    stu = {"小明"，11，"男"};
+
+    cout << stu.age;
+
+1. 创建结构体时，可带默认值
+
+#### 结构体数组
+    struct Student stu[3];
+
+     struct *p = new Student;
+     p->name = "11";
+
+     deliete p;
+
+#### 结构体指针数组
+    struct Student * p = new Student[3];
+
+    p[1].age = 22;
+
+    delete[] p;
+
+# 函数
+1. return执行，函数立刻结束
+2. 函数不可定义在main函数内
