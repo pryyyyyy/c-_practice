@@ -124,3 +124,12 @@
 # 函数
 1. return执行，函数立刻结束
 2. 函数不可定义在main函数内
+3. 无返回值函数：void
+4. 空参函数：()必须写
+
+#### 函数传入数组
+    void func(int arr[])
+    void func(int arr[10])
+    void func(int * arr)
+1. 函数接受数组传入，一般建议附带数组长度（否则非常难以统计）
+2. 在函数内调用`sizeof(arr)`得到的是指针大小
